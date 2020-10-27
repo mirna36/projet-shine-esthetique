@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Cormorant+Garamond:ital,wght@1,300&family=Satisfy&display=swap");
+
+/*   SASS TEMPLANTE   */
+
+
+/*   Globale Classes */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+.photololo {
+    width: 10rem;
+    height: 10rem;
+}
+
+.img-product {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 20px;
+}
+
+.button.button {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.font-logo {
+    font-family: "Satisfy", cursive;
+}
+
+.font-titre {
+    font-family: "Asap", sans-serif;
+}
+
+.font-generale {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.color-primary {
+    color: #ef9a9a;
+}
+
+.color-primary-bg {
+    background-color: #ef9a9a;
+}
+
+.color-second {
+    color: #42a5f5;
+}
+
+.color-second-bg {
+    background-color: #42a5f5;
+}
+
+.color-third {
+    color: #009688;
+}
+
+.color-third-bg {
+    background-color: #009688;
+}
+
+.color-fourth {
+    color: #424242;
+}
+
+.color-fourth-bg {
+    background-color: #424242;
+}
+
+img.navbar-brand {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
