@@ -1,0 +1,26 @@
+%%mocodo
+:
+SOINS: Id_soins, libelle, resume, prix
+:::
+LIGNE_DE_CDE: Id_cde, qte_cde, prix_unitaire, date_cde, #Id_vte->VENTE->Id_vte, #Id_soins->SOINS->Id_soins, #Id_maq->MAQUILLAGE->Id_maq, #Id_soins_ong->SOINS_ONGLES->Id_soins_ong
+:::
+VENTE: Id_vte, qte_vte, montant, date_vte, #Id_utr->UTILISATEUR->Id_utr
+:
+
+
+:
+SOINS_ONGLES: Id_soins_ong, libelle, resume, prix
+:
+MAQUILLAGE: Id_maq, libelle, resume, prix
+:
+RESERVATION: Id_rst, nom, prenom, #Id_utr->UTILISATEUR->Id_utr
+:::::
+
+
+:::::
+CONSEILS_TUTOS: Id_csl, resume_csl
+:
+PEUT CONSULTER: #Id_utr->UTILISATEUR->Id_utr, _#Id_csl->CONSEILS_TUTOS->Id_csl
+:
+UTILISATEUR: Id_utr, nom, prenom, email, mot_de_passe, telephone
+:
