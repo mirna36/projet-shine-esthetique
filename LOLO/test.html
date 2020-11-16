@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("img").mouseenter(function() {
+                $("#soins").animate({
+                    padding: "+=100px"
+                });
+            });
+            $("img").mouseleave(function() {
+                $("#soins").animate({
+                    padding: "-=100px"
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!--Debut Header-->
+    <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+            <p></p>
+            <div class="font-rale font-size-14">
+                <a href="#" class="px-3 border-right border-left text-dark">Login</a>
+                <a href="#" class="px-3 border-right  text-dark">Wishlist(0)</a>
+            </div>
+        </div>
+
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark color-primary-bg">
+            <img class="navbar-brand" src="images/logo.jpeg" alt="Logo" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav m-auto font-logo font-size-20">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Soins<i class="fas fa-chevron-down font-size-14"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Maquillage<i class="fas fa-chevron-down font-size-14"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ongles<i class="fas fa-chevron-down font-size-14"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Turoriels<i class="fas fa-chevron-down font-size-14"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog Conseils<i class="fas fa-chevron-down font-size-14"></i></a>
+                    </li>
+
+                </ul>
+                <form action="#" class="font-size-14 font-rale">
+                    <a href="#" class="py-2 rounded-pill color-second-bg">
+                        <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                        <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+
+                    </a>
+                </form>
+            </div>
+        </nav>
+
+
+        <!--Fin navigation-->
+
+
+    </header>
+    <!--fin Header-->
+    <h1 style="text-align: center;">NOS SOINS</h1>
+    <div class="container">
+        <div class="row">
+            <div id="soins" class=" col-md-4 text-center ">
+                <img src="images/Soins/soins visage et corp.jpg " class="img-product ">
+                </i>
+                <h3>Soins visage</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae enim suscipit atque modi culpa repellendus provident. Laborum, quia quam quisquam laboriosam provident nobis quae necessitatibus.</p>
+                <a href=" " class="btn btn-outline-danger ">Decouvrez et Reservez</a><br><br><br><br>
+            </div>
+
+            <div class="col-md-4 text-center ">
+                <img src="images/Make up/de jour.jpg " class="img-product ">
+                </i>
+                <h3>Soins Corp</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae enim suscipit atque modi culpa repellendus provident. Laborum, quia quam quisquam laboriosam provident nobis quae necessitatibus.</p>
+                <a href=" " class="btn btn-outline-danger ">Decouvrez et Reservez</a> <br><br><br><br>
+            </div>
+
+
+
+            <br><br>
+            <div class="col-md-4 text-center ">
+                <img src="images/caroussel/fingers-376812_1920.jpg " class="img-product ">
+                </i>
+                <h3>Soins main</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae enim suscipit atque modi culpa repellendus provident. Laborum, quia quam quisquam laboriosam provident nobis quae necessitatibus.</p>
+                <a href=" " class="btn btn-outline-danger ">Decouvrez et Reservez</a><br><br><br><br>
+            </div>
+
+            <div class="col-md-4 text-center ">
+                <img src="images/tutos/Tutoriels produit naturel.jpg " class="img-product ">
+                </i>
+                <h3>Soins peaux a prblème</h3>
+                <p id="p2 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae enim suscipit atque modi culpa repellendus provident. Laborum, quia quam quisquam laboriosam provident nobis quae necessitatibus.</p>
+                <a href=" " class="btn btn-outline-danger ">Decouvrez et Reservez</a>
+            </div>
+
+            <div class="col-md-4 text-center ">
+                <img src="images/tutos/pharmacy-2055130_1920.jpg " class="img-product ">
+                </i>
+                <h3>Soins hydratant</h3>
+                <p id="p1 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae enim suscipit atque modi culpa repellendus provident. Laborum, quia quam quisquam laboriosam provident nobis quae necessitatibus.</p>
+                <a href=" " class="btn btn-outline-danger ">Decouvrez et Reservez</a>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+%%mocodo
+:
+ONGLE: id_ong, libellé, prix_unit
+:
+LIGNE DE COMMANDE ongle: #id_ong->ONGLE->id_ong, _#id_vente->VENTE->id_vente, id_cde, date, prix_unit
+:
+VENTE: id_vente, date, montant
+:
+LIGNE DE COMMANDE shop: #id_prod->SHOP->id_prod, _#id_vente->VENTE->id_vente, id_cde, date, prix_unit
+:
+SHOP: id_prod, libellé, prix_unit
+:
+
+
+:::::::
+AVIS: id_avis, libellé, date, #id_client->CLIENT->id_client, date.1
+:::
+
+
+:
+COIFFURE: id_coif, libellé, photo
+:::
+CLIENT: id_client, nom, prénom, téléphone, email, ville, cp, #id_vente->VENTE->id_vente
+:::
+MAQUILLAGE: id_maq, libellé, photo
+:
+
+
+:
+LIGNE DE COMMANDE DEVIS Coiffure: #id_coif->COIFFURE->id_coif, _#id_devis->DEVIS_COIF->id_devis, date, besoins
+:
+DEVIS_COIF: id_devis, date, #id_client->CLIENT->id_client
+:::
+DEVIS_MAQ: id_devis, date, #id_client->CLIENT->id_client
+:
+LIGNE DE COMMANDE DEVIS maquillage: #id_maq->MAQUILLAGE->id_maq, _#id_devis->DEVIS_MAQ->id_devis, date, besoins
+:
