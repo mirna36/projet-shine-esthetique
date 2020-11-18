@@ -1,0 +1,23 @@
+AVIS: id_avis, libellé, date
+:
+MAQUILLAGE: id_maq, libellé, photo
+POSSEDER_DEVIS,11 LIGNE DE COMMANDE DEVIS,0N MAQUILLAGE, 0N COIFFURE
+COIFFURE: id_coif, libellé, photo
+
+DONNER, 11 AVIS, 1N CLIENT: date
+DEVIS: id, date, montant
+INCLURE_DEVIS, 11 LIGNE DE COMMANDE DEVIS, 1N DEVIS
+LIGNE DE COMMANDE DEVIS: id, qté,date
+:
+
+CLIENT: id_client, nom, prénom, téléphone, email, ville, cp
+DAMANDER, 11 DEVIS, 1N CLIENT
+LIGNE DE COMMANDE:id_lcmd,qté,prix_unit,date
+POSSEDER,11 LIGNE DE COMMANDE, 0N ONGLE, 0N SHOP
+SHOP: id_prod, libellé, prix_unit
+
+VENDU, 1N CLIENT, 11 VENTE
+VENTE: id_vente, date, montant
+INCLURE, 11 LIGNE DE COMMANDE, 1N VENTE
+ONGLE: id_ong, libellé, prix_unit
+:
